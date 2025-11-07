@@ -745,7 +745,7 @@ plt.show()""",
 st.image(
     "screenshots/PE_overlap.png",
     caption="Potential energy overlap across replicas. Substantial overlap → healthy exchange acceptance.",
-    use_container_width=True,
+    width=300,
 )
 
 st.markdown(
