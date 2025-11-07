@@ -53,7 +53,7 @@ with left:
         Transitions that require crossing even moderate free-energy barriers become rare
         on accessible timescales. As a result:
 
-        - free energy profiles phi,psi, or phi,psi built from a single
+        - free energy profiles φ/ψ built from a single
           300 K trajectory are often **noisy, biased, or incomplete**;
         - important conformational states may be severely undersampled or completely missed.
         """,
@@ -101,17 +101,17 @@ st.markdown(
     energy distributions, the exchange probabilities (typically on the order of a few tenths)
     are high enough that configurations can perform a **random walk in temperature space**:
 
-    - a configuration heats up → crosses a barrier in phi, psi,
+    - a configuration heats up → crosses a barrier in φ/ψ,
     - then cools back down → bringing new conformations into the 300 K ensemble.
 
     The payoff is that your **lowest-temperature replica** inherits transitions that would be
     extremely rare in plain MD, yielding **smoother, better-converged 1D and 2D free energy
-    surfaces** along phi and psi.
+    surfaces** along φ/ψ.
 
     **Metadynamics** approaches the same problem from a different direction. Instead of changing
     temperature, we:
 
-    - identify slow **collective variables** here phi and psi,
+    - identify slow **collective variables** here φ/ψ,
     - periodically deposit repulsive Gaussian hills where the system has visited in CV space,
     - progressively fill free-energy wells, forcing exploration of new regions.
 
