@@ -1037,17 +1037,52 @@ st.subheader("Conclusion")
 
 st.markdown(
     """
-    **Summary of the pipeline:**
-    1. Combined logs → ran `demux.pl` to build `replica_index.xvg` / `replica_temp.xvg`.
-    2. Verified **exchange health** (average probabilities and counts).
-    3. Assessed **potential-energy overlap**; substantial overlap → healthy exchanges.
-    4. **Demultiplexed** trajectories with `trjcat -demux -split` to obtain `0–3_remd_demux.xtc`.
-    5. Replayed trajectories with **PLUMED driver** to compute CVs → `COLVAR`.
-    6. Built **1D/2D FES** from `COLVAR` using `plumed sum_hills` and plotted ϕ, ψ and (ϕ, ψ).
+    This tutorial demonstrated how Replica Exchange MD combined with PLUMED CV analysis can be
+    used to generate physically meaningful free-energy landscapes for a small peptide model
+    (alanine dipeptide). By intentionally allowing configurations to diffuse across temperature
+    space — and then reconstructing φ/ψ behavior back in a single trajectory frame — we were able
+    to overcome kinetic trapping, enhance sampling, and recover smoother, interpretable free-energy
+    profiles.
 
-    **Why this matters:** Good REMD shows frequent accepted swaps and overlapping energies,
-    enabling configurations to perform a **random walk in temperature space** and improving
-    sampling of the φ/ψ landscape. The demultiplex → CV → FES chain then converts that
-    sampling into **clean, interpretable free-energy profiles** suitable for analysis and slides.
+    Key outcomes of this workflow:
+
+    - exchange probabilities and PE overlap act as direct diagnostics of REMD quality,
+    - demultiplexing provides physically continuous trajectories per replica,
+    - PLUMED post-processing turns raw trajectories into CV-resolved free-energy maps,
+    - 1D F(φ) / F(ψ) and 2D F(φ,ψ) provide compact, quantitative interpretations of accessible
+      conformational basins.
+
+    Overall, this is the smallest, simplest peptide system where you can transparently see how
+    enhanced sampling actually improves convergence of free-energy surfaces — and why REMD +
+    CV-based reweighting is foundational before applying to larger membrane proteins, GPCRs,
+    transmembrane dimers, amyloid cores, etc.
+    """
+)
+
+st.markdown("---")
+
+# ================== REFERENCES ==================
+st.subheader("References")
+
+st.markdown(
+    """
+    **GROMACS**  
+    Abraham, M. J., Murtola, T., Schulz, R., Páll, S., Smith, J. C., Hess, B., & Lindahl, E.  
+    *GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers.*  
+    SoftwareX (2015).  
+    https://doi.org/10.1016/j.softx.2015.06.001  
+    *(Open Access / Creative Commons licensed)*
+
+    **PLUMED 2**  
+    Tribello, G. A., Bonomi, M., Branduardi, D., Camilloni, C., & Bussi, G.  
+    *PLUMED 2: New feathers for an old bird.*  
+    Computer Physics Communications (2014).  
+    https://doi.org/10.1016/j.cpc.2013.09.018
+
+    **Replica Exchange MD concept**  
+    Sugita, Y., & Okamoto, Y.  
+    *Replica-exchange molecular dynamics method for protein folding.*  
+    Chemical Physics Letters (1999).  
+    https://doi.org/10.1016/S0009-2614(99)01123-9
     """
 )
