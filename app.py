@@ -742,16 +742,10 @@ plt.show()""",
     language="python",
 )
 
-st.markdown(
-    """
-    <div style="width:260px; margin-left:auto; margin-right:auto;">
-        <img src="screenshots/PE_overlap.png" style="width:160px; border-radius:4px;">
-        <p style="font-size:0.75rem; text-align:center; margin-top:4px;">
-        Potential energy overlap across replicas. Substantial overlap → healthy exchange acceptance.
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True,
+st.image(
+    "screenshots/PE_overlap.png",
+    caption="Potential energy overlap across replicas. Substantial overlap → healthy exchange acceptance.",
+    width=300
 )
 
 st.markdown(
