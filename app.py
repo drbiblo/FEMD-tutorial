@@ -111,8 +111,8 @@ with c2:
 
         In the sections below (you will add them next), we will:
         - set up REMD for alanine dipeptide in vacuum,
-        - run 2D metadynamics along φ and ψ,
-        - and load the resulting data into this app to generate clean, publication-ready free energy plots.
+        - copy a python code to generate and plot the free energy plots
+        - or (optionally) load the resulting data into this app to generate clean, publication-ready free energy plots.
         """,
         unsafe_allow_html=True,
     )
