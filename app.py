@@ -240,31 +240,17 @@ st.markdown(
 
 st.markdown(
     """
-    #### 4. Python environment for analysis
-
-    For local use (or backing this Streamlit app), you should have:
-
-    - `streamlit`
-    - `numpy`
-    - `pandas`
-    - `matplotlib`
-
-    These go into your `requirements.txt` for deployment on Streamlit Community Cloud.
-    """
-)
-
-st.markdown(
-    """
-    #### 5. What this app will do (next sections)
+    #### 4. What this app will do (next sections)
 
     Below this introduction (in subsequent sections you add), this app is intended to:
 
-    - present annotated, copy-pasteable REMD and metadynamics setup blocks for alanine dipeptide,
-    - let you upload your own outputs (e.g. `COLVAR`, `fes_psi_phi.dat`, φ/ψ time series),
+    - present annotated, copy-pasteable REMD and simulation setup blocks for alanine dipeptide,
+    - you can compare your results for each step to the figures/screenshots here
+    - perform the tutorial step by step in your own machine
+    - let you upload (optionally) your own outputs (e.g. `COLVAR`, `fes_psi_phi.dat`, etc),
     - automatically generate:
-      - 2D FES(φ, ψ) heatmaps,
+      - FES(φ, ψ) heatmaps,
       - 1D profiles F(φ) and F(ψ),
-      - clean figures ready for talks, reports, or publications.
 
     This page is your conceptual and practical starting point. From here, you can extend the app with:
     - a **Simulation Setup** tab (REMD + MetaD scripts),
