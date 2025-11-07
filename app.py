@@ -22,7 +22,14 @@ st.markdown(
 st.markdown(
     """
     <div style="margin-top: 10px; font-size: 0.95rem;">
-        <b>TALIPOV COMPUTATIONAL GROUP, NEW MEXICO STATE UNIVERSITY</b><br>
+        <b>
+            TALIPOV COMPUTATIONAL GROUP, NEW MEXICO STATE UNIVERSITY
+            <a href="https://chemistry.nmsu.edu/facultyandstaff/talipov/marat-r-talipov.html"
+               target="_blank" rel="noopener noreferrer"
+               style="margin-left: 8px; font-weight: 600; color: #1f77b4; text-decoration: none;">
+               (Faculty page)
+            </a>
+        </b><br>
         Tutorial by: <b>Oluwatosin Saibu, Arslan Talipov, Caroline Ayo-Olaojo, Samuel Brown</b>
     </div>
     """,
