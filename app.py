@@ -354,7 +354,7 @@ gmx_mpi mdrun  -v -deffnm min""",
 st.image(
     "screenshots/screenshot4.png",
     caption="Minimization run: checking for convergence and stability.",
-    width=500,
+    width=1000,
 )
 
 # ---------- STEP 5 ----------
@@ -457,7 +457,7 @@ gmx_mpi grompp -f 3/nvt.mdp -p 3/topol.top -c 3/mini.gro -o 3/remd.tpr -maxwarn 
 st.image(
     "screenshots/screenshot10.png",
     caption="Successful generation of replica TPR files for REMD.",
-    width=500,
+    width=1000,
 )
 
 # ---------- STEP 11 ----------
@@ -668,7 +668,7 @@ st.code(
 st.image(
     "screenshots/screenshot12.png",
     caption="Average exchange probabilities table (from REMD.log).",
-    width=500,
+    width=1000,
 )
 
 st.markdown(
