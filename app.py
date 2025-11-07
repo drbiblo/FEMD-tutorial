@@ -745,7 +745,7 @@ plt.show()""",
 st.markdown(
     """
     <div style="width:260px; margin-left:auto; margin-right:auto;">
-        <img src="screenshots/PE_overlap.png" style="width:260px; border-radius:6px;">
+        <img src="screenshots/PE_overlap.png" style="width:160px; border-radius:4px;">
         <p style="font-size:0.75rem; text-align:center; margin-top:4px;">
         Potential energy overlap across replicas. Substantial overlap → healthy exchange acceptance.
         </p>
