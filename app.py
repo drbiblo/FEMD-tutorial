@@ -53,7 +53,7 @@ with left:
         Transitions that require crossing even moderate free-energy barriers become rare
         on accessible timescales. As a result:
 
-        - free energy profiles phi, psi, or phi,psi built from a single
+        - free energy profiles phi,psi, or phi,psi built from a single
           300 K trajectory are often **noisy, biased, or incomplete**;
         - important conformational states may be severely undersampled or completely missed.
         """,
